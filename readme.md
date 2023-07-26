@@ -1,0 +1,3 @@
+Week 3 Day 2 - HTML & CSS - Lab
+
+ This lab shows the use of HTML and CSS to create different sections that adapt well to different screen sizes. The sections are styled using Flexbox, a powerful tool for arranging elements on a webpage. We have six sections, each with its own unique look and layout. Additionally, there's a question mark icon that stays fixed in the bottom right corner, no matter how you scroll the page. This ensures that the sections and the icon always look good, whether you're using a large or small screen.

@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+  }
+  
+  /* Setting a fixed height for section-1 */
+  .section-1 {
+    height: 100px;
+    background-color: rgb(216, 216, 216);
+    display: flex;
+  }
+  
+  /* Setting a fixed width for the div inside section-1 */
+  .section-1 > .div1-section1 {
+    flex: 0 0 auto; /* flex-grow: 0; flex-shrink: 0; flex-basis: auto (take up natural width) */
+    width: 100px;
+    height: 60px;
+    background-color: rgb(103, 142, 214);
+    margin: 20px 20px;
+  }
+  
+  /* Setting a minimum height for sections to prevent them from becoming too small */
+  .section-2,
+  .section-3,
+  .section-4,
+  .section-5,
+  .section-6 {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Additional styling for section-2 */
+  .section-2 {
+    background-color: rgb(255, 255, 255);
+    margin: 50px;
+  }
+  
+  /* Style each sentence within section-2 */
+  .section-2 p {
+    margin: 10px;
+  }
+  
+  .section-3 {
+    background-color: rgb(103, 142, 214);
+  }
+  
+  .section-4 {
+    background-color: rgb(148, 222, 196);
+  }
+  
+  .section-5 {
+    background-color: rgb(201, 230, 154);
+  }
+  
+  .section-6 {
+    background-color: rgb(243, 231, 108);
+  }
+  
+  /* using @media to handle overlapping issue when collapsing browser horizontally */
+  @media screen and (max-width: 768px) {
+    .section-1,
+    .section3to6 {
+      flex-direction: column;
+    }
+  }
+  
+  /* Style for the question mark */
+  .question-mark {
+    position: fixed; /* It fixes the element in the viewport */
+  bottom: 20px; /* It sets the distance from the bottom of the viewport */
+  right: 20px; /* It sets the distance from the right of the viewport */
+  width: 50px; /* It sets the width of the circle */
+  height: 50px; /* It sets the height of the circle */
+  border-radius: 50%; /* It creates a circular shape */
+  background-color: black; /* It sets the background color to black */
+  color: white; /* It sets the text color to white */
+  font-size: 24px; /* It adjusts the font size as needed */
+  display: flex; /* It uses flexbox to center the question mark */
+  justify-content: center; /* It centers horizontally */
+  align-items: center; /* It centers vertically */
+  cursor: pointer; /* It adds a cursor pointer to indicate interactivity */
+  z-index: 999; /* It sets the z-index to make sure it stays above other elements */
+}
+  
